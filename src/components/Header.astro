@@ -1,0 +1,19 @@
+---
+import { Icon } from 'astro-icon/components';
+---
+
+<header class="sticky top-0 z-50 w-full border-b border-white/5 bg-background/80 backdrop-blur-xl">
+  <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <img src="/marconiartelogo.png" alt="Xicifra Logo" class="w-10 h-10 object-contain" />
+      <span class="text-2xl font-black tracking-tight text-white">Xicifra</span>
+    </div>
+    <nav class="hidden md:flex items-center gap-10">
+      <a class="text-sm font-semibold text-zinc-400 hover:text-primary transition-colors" href="#servicios">Servicios</a>
+      <a class="text-sm font-semibold text-zinc-400 hover:text-primary transition-colors" href="#portfolio">Portfolio</a>
+      <a href="#contacto" class="bg-primary/10 border border-primary/30 text-primary px-6 py-2.5 rounded-lg text-sm font-bold shadow-[0_0_15px_rgba(0,229,255,0.15)] hover:bg-primary hover:text-background hover:shadow-[0_0_20px_rgba(0,229,255,0.4)] transition-all active:scale-95">
+        Cotizar Proyecto
+      </a>
+    </nav>
+  </div>
+</header>

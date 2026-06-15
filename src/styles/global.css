@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  /* DARK MODE TECH AESTHETIC */
+  --color-primary: #00e5ff; /* Brighter neon cyan for dark background */
+  --color-primary-dim: #00b4d8;
+  --color-secondary: #ffffff; /* White for primary text */
+  --color-background: #030712; /* Pitch black/very dark gray (slate-950) */
+  --color-surface: #0f172a; /* Slate 900 for cards */
+  --color-surface-light: #1e293b; /* Slate 800 for borders/hover */
+  
+  --font-display: 'Manrope', system-ui, sans-serif;
+  --font-body: 'Manrope', system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-background font-body text-zinc-300 antialiased selection:bg-primary/30 selection:text-white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-white;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}

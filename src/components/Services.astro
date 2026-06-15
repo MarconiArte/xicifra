@@ -1,0 +1,78 @@
+---
+import { Icon } from 'astro-icon/components';
+---
+
+<section class="py-24 bg-surface border-y border-white/5" id="servicios">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex flex-col md:flex-row justify-between items-end gap-6 mb-20 border-b border-white/5 pb-10">
+      <div class="max-w-2xl">
+        <h2 class="text-primary font-mono text-sm tracking-[0.2em] uppercase mb-6 flex items-center gap-4">
+          <span class="w-12 h-px bg-primary"></span>
+          Nuestros Servicios
+        </h2>
+        <h3 class="text-4xl md:text-5xl font-black text-white leading-tight tracking-tight">
+          Desarrollo y Diseño <br class="hidden md:block"/> a Medida
+        </h3>
+      </div>
+      <p class="text-zinc-400 max-w-sm font-light text-lg">
+        Combinamos precisión técnica con visión estética para elevar tu presencia online y dominar en tu sector.
+      </p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Servicio 1: Desarrollo Web -->
+      <div class="group p-10 bg-background border border-white/5 hover:border-primary/50 transition-all duration-500 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full blur-2xl group-hover:bg-primary/20 transition-all duration-500 pointer-events-none"></div>
+        
+        <div class="w-12 h-12 flex items-center text-primary mb-8">
+          <Icon name="lucide:code-2" class="w-10 h-10" />
+        </div>
+        <h4 class="text-2xl font-bold mb-4 text-white tracking-wide">Desarrollo Web</h4>
+        <p class="text-zinc-400 leading-relaxed mb-10 font-light">
+          Sitios ultra-rápidos, seguros y escalables construidos con arquitectura moderna (Astro, React, Tailwind).
+        </p>
+        <a class="text-primary font-mono uppercase text-sm tracking-widest inline-flex items-center gap-3 group/link mt-auto" href="#">
+          Ver detalles 
+          <span class="w-8 h-px bg-primary/30 group-hover/link:w-12 group-hover/link:bg-primary transition-all"></span>
+          <Icon name="lucide:arrow-right" class="w-4 h-4 group-hover/link:translate-x-2 transition-transform" />
+        </a>
+      </div>
+
+      <!-- Servicio 2: Diseño UI/UX -->
+      <div class="group p-10 bg-background border border-white/5 hover:border-primary/50 transition-all duration-500 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full blur-2xl group-hover:bg-primary/20 transition-all duration-500 pointer-events-none"></div>
+        
+        <div class="w-12 h-12 flex items-center text-primary mb-8">
+          <Icon name="lucide:layers" class="w-10 h-10" />
+        </div>
+        <h4 class="text-2xl font-bold mb-4 text-white tracking-wide">Diseño UI/UX</h4>
+        <p class="text-zinc-400 leading-relaxed mb-10 font-light">
+          Interfaces asombrosas y centradas en el usuario que maximizan la retención y la tasa de conversión.
+        </p>
+        <a class="text-primary font-mono uppercase text-sm tracking-widest inline-flex items-center gap-3 group/link mt-auto" href="#">
+          Ver detalles 
+          <span class="w-8 h-px bg-primary/30 group-hover/link:w-12 group-hover/link:bg-primary transition-all"></span>
+          <Icon name="lucide:arrow-right" class="w-4 h-4 group-hover/link:translate-x-2 transition-transform" />
+        </a>
+      </div>
+
+      <!-- Servicio 3: SEO & Performance -->
+      <div class="group p-10 bg-background border border-white/5 hover:border-primary/50 transition-all duration-500 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full blur-2xl group-hover:bg-primary/20 transition-all duration-500 pointer-events-none"></div>
+        
+        <div class="w-12 h-12 flex items-center text-primary mb-8">
+          <Icon name="lucide:rocket" class="w-10 h-10" />
+        </div>
+        <h4 class="text-2xl font-bold mb-4 text-white tracking-wide">SEO & Performance</h4>
+        <p class="text-zinc-400 leading-relaxed mb-10 font-light">
+          Auditorías técnicas y optimización agresiva para dominar los motores de búsqueda de Google.
+        </p>
+        <a class="text-primary font-mono uppercase text-sm tracking-widest inline-flex items-center gap-3 group/link mt-auto" href="#">
+          Ver detalles 
+          <span class="w-8 h-px bg-primary/30 group-hover/link:w-12 group-hover/link:bg-primary transition-all"></span>
+          <Icon name="lucide:arrow-right" class="w-4 h-4 group-hover/link:translate-x-2 transition-transform" />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
