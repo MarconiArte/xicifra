@@ -9,23 +9,50 @@ import { Icon } from 'astro-icon/components';
       <h3 class="text-4xl md:text-5xl font-black text-white tracking-tight">Creaciones Destacadas</h3>
     </div>
     
-    <div class="relative min-h-[400px] flex items-center justify-center border border-white/10 bg-surface/50 group overflow-hidden">
-      <!-- Grid Overlay -->
-      <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+    <div class="relative flex flex-col lg:flex-row border border-white/10 bg-surface/50 group overflow-hidden transition-all duration-500 hover:border-primary/50">
+      <!-- Iframe Section -->
+      <div class="lg:w-1/2 relative overflow-hidden bg-black/50 aspect-video lg:aspect-auto min-h-[400px]">
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:24px_24px] z-0 pointer-events-none"></div>
+        <iframe 
+          src="https://optivist.site/" 
+          title="Optivist - Óptica Virtual" 
+          class="absolute inset-0 w-[200%] h-[200%] scale-50 origin-top-left border-none z-10 transition-opacity duration-500 opacity-80 hover:opacity-100"
+          loading="lazy"
+        ></iframe>
+        <!-- Overlay gradient -->
+        <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent lg:bg-gradient-to-r z-20 pointer-events-none"></div>
+      </div>
       
-      <div class="relative z-10 flex flex-col items-center text-center p-12 bg-background/80 backdrop-blur-sm border border-white/5">
-        <div class="mb-8 text-primary">
-          <Icon name="lucide:terminal" class="w-16 h-16 animate-pulse" />
+      <!-- Content Section -->
+      <div class="lg:w-1/2 p-10 lg:p-16 flex flex-col justify-center relative z-20 bg-background/80 lg:bg-transparent backdrop-blur-sm">
+        <div class="inline-flex items-center gap-2 mb-4">
+          <span class="w-2 h-2 bg-primary animate-pulse"></span>
+          <span class="text-primary font-mono text-xs tracking-widest uppercase">Landing Page</span>
         </div>
-        <h4 class="text-2xl font-mono tracking-widest mb-4 text-white uppercase">SISTEMA EN CONSTRUCCIÓN</h4>
-        <p class="text-lg text-zinc-400 max-w-md mb-8 font-light">
-          Compilando nuestros mejores proyectos digitales. El portafolio interactivo estará disponible pronto.
+        
+        <h4 class="text-3xl md:text-4xl font-bold text-white mb-6">Optivist</h4>
+        
+        <p class="text-zinc-400 text-lg mb-8 font-light leading-relaxed">
+          <strong>Tu óptica virtual, sin vueltas.</strong><br/>
+          La claridad que necesitas con la simplicidad que mereces. Calidad óptica profesional desde la comodidad de WhatsApp.
         </p>
         
-        <!-- Tech styled badge -->
-        <div class="flex items-center gap-3 px-6 py-2 bg-primary/10 border border-primary/20 text-primary font-mono text-xs uppercase tracking-widest">
-          <span class="w-2 h-2 bg-primary animate-ping"></span>
-          Status: Compiling v2.0
+        <div class="flex flex-wrap gap-3 mb-10">
+          <span class="px-3 py-1 text-xs font-mono text-white/70 border border-white/10 bg-white/5">Astro</span>
+          <span class="px-3 py-1 text-xs font-mono text-white/70 border border-white/10 bg-white/5">Tailwind CSS</span>
+          <span class="px-3 py-1 text-xs font-mono text-white/70 border border-white/10 bg-white/5">Landing</span>
+        </div>
+        
+        <div>
+          <a 
+            href="https://optivist.site/" 
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground font-mono uppercase tracking-wider text-sm hover:bg-white hover:text-black transition-colors duration-300"
+          >
+            Visitar Proyecto
+            <Icon name="lucide:arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1" />
+          </a>
         </div>
       </div>
     </div>
